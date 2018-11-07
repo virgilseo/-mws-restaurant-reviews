@@ -1,0 +1,30 @@
+
+@media only screen and (min-width: 800px) {
+
+  .filter-options {
+    flex-direction: row;
+    }
+
+
+  #restaurants-list{
+    justify-content: space-around;
+    flex-flow: wrap;
+  }
+
+  #restaurants-list li {
+    width: 35%;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  #restaurants-list li {
+    width: 20%;
+    height: 449px;
+  }
+  .filter-options{
+    width:1100px;
+  }
+  #restaurants-list{
+    width: 1100px;
+  }
+}
