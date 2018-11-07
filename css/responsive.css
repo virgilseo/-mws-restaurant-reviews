@@ -1,4 +1,4 @@
-
+/* ====================== Main View ====================== */
 @media only screen and (min-width: 800px) {
 
   .filter-options {
@@ -26,5 +26,28 @@
   }
   #restaurants-list{
     width: 1100px;
+  }
+}
+
+/* ====================== Restaurant Details View ====================== */
+
+@media only screen and (min-width: 800px) {
+  .details-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  #restaurant-container {
+    width: 40%;
+  }
+  #reviews-container {
+    width: 40%;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .details-container {
+    justify-content: center;
   }
 }
