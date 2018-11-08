@@ -39,7 +39,10 @@
     <div class="details-container">
       <section id="restaurant-container">
         <h1 id="restaurant-name"></h1>
-        <img id="restaurant-img">
+        <picture class="picture-element">
+          <source class="source" media="(max-width: 400px)">
+          <img id="restaurant-img">
+        </picture>
         <p id="restaurant-cuisine"></p>
         <p id="restaurant-address"></p>
         <table id="restaurant-hours"></table>

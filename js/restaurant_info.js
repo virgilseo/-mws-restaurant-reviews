@@ -86,6 +86,11 @@ fillRestaurantHTML = (restaurant = self.restaurant) => {
   const address = document.getElementById('restaurant-address');
   address.innerHTML = restaurant.address;
 
+  // Serve responsive images
+
+  const sourceMedia = document.querySelector('.source');
+  sourceMedia.setAttribute('srcset', `/img/${restaurant.id}.jpg 2x, /img/${restaurant.id}_small.jpg`);
+
   const image = document.getElementById('restaurant-img');
   image.className = 'restaurant-img'
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
