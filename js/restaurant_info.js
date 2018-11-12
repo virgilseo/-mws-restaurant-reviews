@@ -202,7 +202,3 @@ getParameterByName = (name, url) => {
     return '';
   return decodeURIComponent(results[2].replace(/\+/g, ' '));
 }
-
-// Set role for site navigation list
-const siteNav = document.getElementById('breadcrumb');
-siteNav.setAttribute('role', 'navigation');
