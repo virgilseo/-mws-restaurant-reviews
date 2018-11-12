@@ -102,10 +102,6 @@ fillRestaurantHTML = (restaurant = self.restaurant) => {
   const cuisine = document.getElementById('restaurant-cuisine');
   cuisine.innerHTML = restaurant.cuisine_type;
 
-  // Add the restaurant container to the keyboard tabbing order
-  const restaurantContainer = document.getElementById('restaurant-container');
-  restaurantContainer.setAttribute('tabindex', '0');
-
   // fill operating hours
   if (restaurant.operating_hours) {
     fillRestaurantHoursHTML();
@@ -139,9 +135,6 @@ fillRestaurantHoursHTML = (operatingHours = self.restaurant.operating_hours) => 
  */
 fillReviewsHTML = (reviews = self.restaurant.reviews) => {
   const container = document.getElementById('reviews-container');
-
-  //Add the reviews container in the keynorad tabbing order
-  container.setAttribute('tabindex', '0');
 
   const title = document.createElement('h2');
   title.innerHTML = 'Reviews';
@@ -209,3 +202,7 @@ getParameterByName = (name, url) => {
     return '';
   return decodeURIComponent(results[2].replace(/\+/g, ' '));
 }
+
+// Set role for site navigation list
+const siteNav = document.getElementById('breadcrumb');
+siteNav.setAttribute('role', 'navigation');
