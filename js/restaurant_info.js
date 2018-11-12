@@ -89,6 +89,7 @@ fillRestaurantHTML = (restaurant = self.restaurant) => {
   // Serve responsive images
 
   const sourceMedia = document.querySelector('.source');
+  sourceMedia.setAttribute('media', '(max-width: 400px)');
   sourceMedia.setAttribute('srcset', `/img/${restaurant.id}.jpg 2x, /img/${restaurant.id}_small.jpg`);
 
   const image = document.getElementById('restaurant-img');
@@ -97,6 +98,10 @@ fillRestaurantHTML = (restaurant = self.restaurant) => {
 
   const cuisine = document.getElementById('restaurant-cuisine');
   cuisine.innerHTML = restaurant.cuisine_type;
+
+  // Add the restaurant container to the keyboard tabbing order
+  const restaurantContainer = document.getElementById('restaurant-container');
+  restaurantContainer.setAttribute('tabindex', '0');
 
   // fill operating hours
   if (restaurant.operating_hours) {
@@ -131,6 +136,10 @@ fillRestaurantHoursHTML = (operatingHours = self.restaurant.operating_hours) => 
  */
 fillReviewsHTML = (reviews = self.restaurant.reviews) => {
   const container = document.getElementById('reviews-container');
+
+  //Add the reviews container in the keynorad tabbing order
+  container.setAttribute('tabindex', '0');
+
   const title = document.createElement('h2');
   title.innerHTML = 'Reviews';
   container.appendChild(title);

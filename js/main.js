@@ -158,6 +158,9 @@ fillRestaurantsHTML = (restaurants = self.restaurants) => {
 createRestaurantHTML = (restaurant) => {
   const li = document.createElement('li');
 
+  // PLace list item in the tabing order
+  li.setAttribute('tabindex', '0');
+
   //Serve responsive images
   const pictureMain = document.createElement('picture');
   li.append(pictureMain);
