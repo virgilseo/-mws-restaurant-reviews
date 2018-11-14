@@ -73,7 +73,6 @@ nav h1 a {
     background-color: #eee;
     font-size: 17px;
     margin: 0;
-    width: 100%;
 }
 
 /* Display list items side by side */
@@ -197,6 +196,8 @@ nav h1 a {
 }
 
 /* ====================== Restaurant Details ====================== */
+
+/*
 .inside header {
   position: fixed;
   top: 0;
@@ -218,7 +219,7 @@ nav h1 a {
 }
 .inside #footer {
   bottom: 0;
-}
+}*/
 #restaurant-name {
   color: #f18200;
   font-family: Arial,sans-serif;
