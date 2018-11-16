@@ -18,12 +18,14 @@
     <!-- Beginning nav -->
     <nav role="navigation">
       <h1><a href="/">Restaurant Reviews</a></h1>
+      <!-- Beginning breadcrumb -->
+      <ul id="breadcrumb">
+        <li><a href="/">Home</a></li>
+      </ul>
+      <!-- End breadcrumb -->
+      <!-- Skip to link -->
+      <a href="#restaurant-container" class="skip-link">Skip to main content</a>
     </nav>
-    <!-- Beginning breadcrumb -->
-    <ul id="breadcrumb" role="navigation">
-      <li><a href="/">Home</a></li>
-    </ul>
-    <!-- End breadcrumb -->
     <!-- End nav -->
   </header>
   <!-- End header -->
@@ -32,7 +34,7 @@
   <main id="maincontent">
     <!-- Beginning map -->
     <section id="map-container">
-      <div id="map" role="application" aria-hidden="true"></div>
+      <div id="map" role="application" aria-roledescription="Restaurant Location On Map"></div>
     </section>
     <!-- End map -->
     <!-- Beginning restaurant -->

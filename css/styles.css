@@ -118,6 +118,7 @@ nav h1 a {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	margin-top: 20px;
 }
 .filter-options h2 {
   color: white;
@@ -156,7 +157,7 @@ nav h1 a {
   font-family: Arial,sans-serif;
   margin: 15px;
   min-height: 380px;
-  padding: 0 30px 25px;
+  padding: 10px;
   text-align: left;
   width: 100%;
 }
@@ -294,4 +295,19 @@ nav h1 a {
 }
 #restaurant-hours td {
   color: #666;
+}
+/* ====================== Skip Link ====================== */
+
+.skip-link {
+  position: absolute;
+	top: -300px;
+	padding: 6px;
+	background-color: orange;
+  color: #fff;
+}
+
+.skip-link:focus{
+	top: 0;
+	left: 0;
+	z-index: 10000;
 }

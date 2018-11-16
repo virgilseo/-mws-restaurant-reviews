@@ -14,16 +14,18 @@
   <header>
     <nav role="navigation">
       <h1><a href="/">Restaurant Reviews</a></h1>
+      <!-- Skip to link -->
+      <a href="#filter-results" class="skip-link">Skip to main content</a>
     </nav>
   </header>
 
   <main id="maincontent">
     <section id="map-container">
-      <div id="map" role="navigation" aria-hidden="true"></div>
+      <div id="map" role="navigation" aria-roledescription="Restaurant Location On Map"></div>
     </section>
     <section class="container">
       <div class="filter-options">
-        <h2 id=>Filter Results</h2>
+        <h2 id="filter-results">Filter Results</h2>
         <select id="neighborhoods-select" aria-label="Choose Neighborhoods" name="neighborhoods" onchange="updateRestaurants()">
           <option value="all">All Neighborhoods</option>
         </select>
