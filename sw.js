@@ -34,9 +34,22 @@ self.addEventListener('install', function(event) {
 
   event.waitUntil(
     //create the cash
-    caches.open('restaurant-static-v1').then(function (cache) {   
+    caches.open('restaurant-static-v1').then(function (cache) {
       // store the urls in the cash using return
       return cache.addAll(urlsToCache);
       })
+  );
+});
+
+// Serve the cache when offline
+
+self.addEventListener('fetch', function(event) {
+  event.respondWith(
+    caches.match(event.request).then(function(response) {
+      // Serve the cache is there is one
+      if(response) return response;
+      // fetch one from the network (if there is no cahe)
+      return fetch(event.request);
+    })
   );
 });
