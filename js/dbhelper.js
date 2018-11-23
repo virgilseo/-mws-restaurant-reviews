@@ -166,6 +166,7 @@ class DBHelper {
       marker.addTo(newMap);
     return marker;
   }
+
   /* static mapMarkerForRestaurant(restaurant, map) {
     const marker = new google.maps.Marker({
       position: restaurant.latlng,
@@ -178,15 +179,16 @@ class DBHelper {
   } */
 
 }
+
 /**
  * Register service worker.
  */
- if(navigator.serviceWorker) {
+ if (navigator.serviceWorker) {
    navigator.serviceWorker.register('./sw.js').then(function () {
      console.log('success');
    }).catch(function () {
      console.log('fail');
    });
- }else{
-   console.log("No service worker support!")
+ } else {
+   console.log("No service worker support!");
  }
