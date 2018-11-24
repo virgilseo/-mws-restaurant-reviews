@@ -5,8 +5,7 @@
     flex-direction: row;
     }
 
-
-  #restaurants-list{
+  #restaurants-list {
     justify-content: space-around;
     flex-flow: wrap;
   }
@@ -35,20 +34,17 @@
   .details-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
-  #restaurant-container {
-    width: 40%;
-  }
-  #reviews-container {
+  #restaurant-container, #reviews-container {
     width: 40%;
   }
 }
 
-@media only screen and (min-width: 800px) {
-  .details-container {
-    justify-content: center;
+@media only screen and (min-width: 1100px) {
+  #restaurant-container, #reviews-container {
+    width: 45%;
   }
 }
 
@@ -58,9 +54,11 @@
   .header-title {
     font-size: 0.7em;
   }
+
   .skip-link {
     font-size: 0.7em;
   }
+
   #breadcrumb li {
     font-size: 0.6em;
   }
