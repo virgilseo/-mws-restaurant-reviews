@@ -50,7 +50,7 @@
 
 /* ====================== Mobile View Media Break Point ====================== */
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 799px) {
   .header-title {
     font-size: 0.7em;
   }
@@ -61,5 +61,9 @@
 
   #breadcrumb li {
     font-size: 0.6em;
+  }
+
+  #restaurants-list li {
+    width: 80%;
   }
 }
